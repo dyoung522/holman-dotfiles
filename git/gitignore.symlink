@@ -1,3 +1,12 @@
 .DS_Store
 *~
-*.swp
+*.rbc*
+*.sw[nop]
+.bundle
+db/*.sqlite3
+log/*.log
+rerun.txt
+tags
+tmp/**/*
+!tmp/cache/.keep
+zeus.json
