@@ -1,0 +1,15 @@
+gotab() {
+    local CMD
+    [[ $# -ne 0 ]] && local CMD="write text \"bin/ssh_connect $@ && exit\""
+    osascript <<-eof
+    tell application "Terminal"
+        tell the front terminal 
+            launch session "Default Session"
+            tell the last session
+                $CMD
+            end tell
+        end tell
+    end tell
+eof
+}
+
