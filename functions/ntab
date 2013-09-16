@@ -1,0 +1,22 @@
+ntab() {
+    if [[ $# == 0 ]]; then
+        ThisDirectory=$PWD
+    elif [[ $# == 1 && -d "$1" ]]; then
+        ThisDirectory="$@"
+    else
+        print "usage: ntab [directory]"
+        return 1
+    fi
+
+    osascript <<-eof
+    tell application "Terminal"
+        tell the front terminal 
+            launch session "Default Session"
+            tell the last session
+                write text "cd \"$ThisDirectory\""
+            end tell
+        end tell
+    end tell
+eof
+}
+
