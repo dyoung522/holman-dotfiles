@@ -2,8 +2,7 @@ autoload colors && colors
 # cheers, @ehrenmurdick
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
-if (( $+commands[git] ))
-then
+if (( $+commands[git] )) ; then
   git="$commands[git]"
 else
   git="/usr/bin/git"
@@ -37,8 +36,7 @@ unpushed () {
 }
 
 need_push () {
-  if [[ $(unpushed) == "" ]]
-  then
+  if [[ $(unpushed) == "" ]] ; then
     echo ""
   else
     echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
@@ -46,20 +44,17 @@ need_push () {
 }
 
 ruby_version() {
-  if (( $+commands[rbenv] ))
-  then
+  if (( $+commands[rbenv] )) ; then
     echo "$(rbenv version | awk '{print $1}')"
   fi
 
-  if (( $+commands[rvm-prompt] ))
-  then
+  if (( $+commands[rvm-prompt] )) ; then
     echo "$(rvm-prompt | awk '{print $1}')"
   fi
 }
 
 rb_prompt() {
-  if ! [[ -z "$(ruby_version)" ]]
-  then
+  if ! [[ -z "$(ruby_version)" ]] ; then
     echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
   else
     echo ""
@@ -70,7 +65,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
-export PROMPT=$'$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
