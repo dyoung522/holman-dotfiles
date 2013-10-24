@@ -12,7 +12,8 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Install homebrew packages
-brew install grc coreutils spark
+for PKG in $(cat $(dirname $0)/packages) ; do
+  brew install $PKG
+done
 
 exit 0
