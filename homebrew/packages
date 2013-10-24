@@ -2,3 +2,7 @@ grc
 coreutils
 spark
 vim
+rbenv
+ruby-build
+postgresql
+rdoc
