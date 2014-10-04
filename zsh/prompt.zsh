@@ -45,27 +45,42 @@ need_push () {
 
 ruby_version() {
   if (( $+commands[rbenv] )) ; then
-    echo "$(rbenv version | awk '{print $1}')"
+    echo "Ruby $(rbenv version | awk '{print $1}')"
   fi
 
   if (( $+commands[rvm-prompt] )) ; then
-    echo "$(rvm-prompt | awk '{print $1}')"
+    echo "Ruby $(rvm-prompt | awk '{print $1}')"
+  fi
+}
+
+rails_version() {
+  if [[ -f "Gemfile.lock" ]] ; then
+    if grep -q rails Gemfile.lock ; then
+      echo "Rails $(egrep '\srails\s\(\d.*\)' Gemfile.lock | sed -e 's/^ *rails (//' -e 's/) *$//')"
+    fi
   fi
 }
 
 rb_prompt() {
   if ! [[ -z "$(ruby_version)" ]] ; then
-    echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
+    echo -n "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
+    if ! [[ -z "$(rails_version)" ]] ; then
+      echo "/ %{$fg_bold[yellow]%}$(rails_version)%{$reset_color%} "
+    fi
   else
     echo ""
   fi
+}
+
+host_name() {
+  echo "%{$fg_bold[green]%}$(hostname -s)%{$reset_color%} "
 }
 
 directory_name() {
   echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)$(git_dirty)$(need_push)\n$(directory_name) › '
+export PROMPT=$'\n$(rb_prompt)$(git_dirty)$(need_push)\n$(host_name)$(directory_name) › '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }

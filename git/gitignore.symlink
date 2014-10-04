@@ -1,4 +1,6 @@
 .DS_Store
+.svn
+.env
 *~
 *.rbc*
 *.sw[nop]
@@ -11,3 +13,4 @@ tmp/**/*
 !tmp/cache/.keep
 zeus.json
 .idea/
+app_environment_variables.rb
