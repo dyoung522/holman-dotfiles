@@ -1,1 +1,1 @@
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)" || exit
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)" || exit
