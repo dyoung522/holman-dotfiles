@@ -12,8 +12,12 @@ function pathmunge() {
 # Modify the path
 pathmunge /usr/local/bin        force
 pathmunge /usr/local/sbin       force
-pathmunge $HOME/.rbenv/bin
+
 pathmunge /usr/local/heroku/bin
+pathmunge /usr/local/lib/node_modules after
+
+pathmunge $HOME/.rbenv/bin
+pathmunge $HOME/.bin            after
 pathmunge $HOME/bin             after
 
 # Cleanup
