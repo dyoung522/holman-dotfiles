@@ -158,3 +158,24 @@ map <D-7> :b 7<CR>
 map <D-8> :b 8<CR>
 map <D-9> :b 9<CR>
 map <D-0> :b 10<CR>
+
+" Bundle: 'vundle'
+" Bundle: 'ctrlp.vim'
+" Bundle: 'syntastic'
+" Bundle: 'tComment'
+" Bundle: 'vim-coffee-script'
+"
+" Bundle: 'scrooloose/nerdtree'
+" Bundle: 'jpo/vim-railscasts-theme'
+" Bundle: 'danro/rename.vim'
+"
+" Bundle: 'vim-ruby/vim-ruby'
+" Bundle: 'thoughtbot/vim-rspec'
+"
+" Bundle: 'tpope/vim-rails'
+" Bundle: 'tpope/vim-haml'
+" Bundle: 'tpope/vim-bundler'
+" Bundle: 'tpope/vim-cucumber'
+" Bundle: 'tpope/vim-endwise'
+" Bundle: 'tpope/vim-fugitive'
+" Bundle: 'tpope/vim-surround'

@@ -1,0 +1,128 @@
+*bundle-log.txt*                   Bundle Install Log
+
+
+Logs bundle install activity. Also see the list of installed |bundles|.
+
+Sat Dec  6 18:35:57 EST 2014 by vim-update-bundles 0.8
+   no updates
+
+Sat Dec  6 18:40:46 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/mctags-vim.git mctags-vim' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:43:26 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/ctags-vim.git ctags-vim' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:46:24 EST 2014 by vim-update-bundles 0.8
+ Add |ctrlp.vim|                1.79               https://github.com/vim-scripts/ctrlp.vim.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/nerdtree.git nerdtree' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:47:04 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/nerdtree.git nerdtree' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:47:11 EST 2014 by vim-update-bundles 0.8
+ Add |nerdtree|                 4.2.0-198-g3b98a7f https://github.com/scrooloose/nerdtree.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/railscasts-theme.git railscasts-theme' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:54:25 EST 2014 by vim-update-bundles 0.8
+ Add |vim-railscasts-theme|     9035daff38dbb      https://github.com/jpo/vim-railscasts-theme.git
+ Add |rename.vim|               1.1                https://github.com/vim-scripts/rename.vim.git
+ Add |syntastic|                3.5.0              https://github.com/vim-scripts/syntastic.git
+ Add |tComment|                 3.04               https://github.com/vim-scripts/tComment.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-bundler.git vim-bundler' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:59:03 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-bundler.git vim-bundler' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 18:59:55 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-bundler.git vim-bundler' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:01:39 EST 2014 by vim-update-bundles 0.8
+ Del |ctrlp.vim|                1.79
+ Del |nerdtree|                 4.2.0-198-g3b98a7f
+ Del |rename.vim|               1.1
+ Del |syntastic|                3.5.0
+ Del |tComment|                 3.04
+ Del |vim-railscasts-theme|     9035daff38dbb
+   6 bundles removed
+
+Sat Dec  6 19:02:19 EST 2014 by vim-update-bundles 0.8
+ Add |ctrlp.vim|                1.79               https://github.com/vim-scripts/ctrlp.vim.git
+ Add |syntastic|                3.5.0              https://github.com/vim-scripts/syntastic.git
+ Add |tComment|                 3.04               https://github.com/vim-scripts/tComment.git
+ Add |nerdtree|                 4.2.0-198-g3b98a7f https://github.com/scrooloose/nerdtree.git
+ Add |vim-railscasts-theme|     9035daff38dbb      https://github.com/jpo/vim-railscasts-theme.git
+ Add |vim-bundler|              v2.0-28-g48abb77   https://github.com/tpope/vim-bundler.git
+ Add |rename.vim|               f133763b0bbd7      https://github.com/danro/rename.vim.git
+ Add |vim-coffee-script|        v003               https://github.com/vim-scripts/vim-coffee-script.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-colors-github.git vim-colors-github' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:03:41 EST 2014 by vim-update-bundles 0.8
+ Del |ctrlp.vim|                1.79
+ Del |nerdtree|                 4.2.0-198-g3b98a7f
+ Del |rename.vim|               f133763b0bbd7
+ Del |syntastic|                3.5.0
+ Del |tComment|                 3.04
+ Del |vim-bundler|              v2.0-28-g48abb77
+ Del |vim-coffee-script|        v003
+ Del |vim-railscasts-theme|     9035daff38dbb
+   8 bundles removed
+
+Sat Dec  6 19:03:47 EST 2014 by vim-update-bundles 0.8
+   no updates
+
+Sat Dec  6 19:04:14 EST 2014 by vim-update-bundles 0.8
+ Add |ctrlp.vim|                1.79               https://github.com/vim-scripts/ctrlp.vim.git
+ Add |syntastic|                3.5.0              https://github.com/vim-scripts/syntastic.git
+ Add |tComment|                 3.04               https://github.com/vim-scripts/tComment.git
+ Add |nerdtree|                 4.2.0-198-g3b98a7f https://github.com/scrooloose/nerdtree.git
+ Add |vim-railscasts-theme|     9035daff38dbb      https://github.com/jpo/vim-railscasts-theme.git
+ Add |vim-bundler|              v2.0-28-g48abb77   https://github.com/tpope/vim-bundler.git
+ Add |rename.vim|               f133763b0bbd7      https://github.com/danro/rename.vim.git
+ Add |vim-coffee-script|        v003               https://github.com/vim-scripts/vim-coffee-script.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-colors-github.git vim-colors-github' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:07:14 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-colors-github.git vim-colors-github' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:07:31 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-colorschemes.git vim-colorschemes' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:07:50 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-cucumber.git vim-cucumber' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:08:37 EST 2014 by vim-update-bundles 0.8
+ Add |vim-cucumber|             8f4826012771e      https://github.com/tpope/vim-cucumber.git
+ Aborted: 'git clone -q https://github.com/vim-scripts/vim-endwise.git vim-endwise' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:09:28 EST 2014 by vim-update-bundles 0.8
+ Add |vundle|                   0.5@1              https://github.com/vim-scripts/vundle.git
+ Add |vim-endwise|              v1.2-9-g96eb117    https://github.com/tpope/vim-endwise.git
+ Add |vim-fugitive|             v2.1-30-g2c8461d   https://github.com/tpope/vim-fugitive.git
+ Aborted: 'git clone -q https://github.com/tpope/vim-matchit.git vim-matchit' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:10:17 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/tpope/vim-nerdtree-tabs.git vim-nerdtree-tabs' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:10:53 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/scrooloose/nerdtree-tabs.git nerdtree-tabs' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:11:02 EST 2014 by vim-update-bundles 0.8
+ Aborted: 'git clone -q https://github.com/scrooloose/nerdtree-tabs.git nerdtree-tabs' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:11:13 EST 2014 by vim-update-bundles 0.8
+ Add |vim-rails|                v5.1-52-gf7d264f   https://github.com/tpope/vim-rails.git
+ Aborted: 'git clone -q https://github.com/tpope/vim-rspec.git vim-rspec' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:11:58 EST 2014 by vim-update-bundles 0.8
+ Add |vim-rspec|                65735f6416fec      https://github.com/thoughtbot/vim-rspec.git
+ Aborted: 'git clone -q https://github.com/tpope/vim-ruby.git vim-ruby' in /Users/dyoung/Library/Mobile Documents/com~apple~CloudDocs/Configs/shell/dotfiles/vim/bundle exited with code 128
+
+Sat Dec  6 19:12:35 EST 2014 by vim-update-bundles 0.8
+ Add |vim-ruby|                 vim7.4-69-g243d021 https://github.com/vim-ruby/vim-ruby.git
+ Add |vim-surround|             v2.0-8-gfa433e0    https://github.com/tpope/vim-surround.git
+   2 bundles added
+
+Sat Dec  6 19:21:02 EST 2014 by vim-update-bundles 0.8
+ Add |vim-haml|                 vim7.2-82-g204e327 https://github.com/tpope/vim-haml.git
+   1 bundle added
+
