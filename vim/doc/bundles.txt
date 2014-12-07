@@ -2,25 +2,73 @@
 
 
 Lists the currently installed bundles. Also see the |bundle-log|.
-Last updated by vim-update-bundles on Sat Dec  6 19:21:02 EST 2014.
+Last updated by vim-update-bundles on Sat Dec  6 20:39:48 EST 2014.
 
   PLUGIN                           VERSION                RELEASE DATE
 ------------------------------------------------------------------------
-  |vundle|                         0.5@1                  2011-02-23
-  |ctrlp.vim|                      1.79                   2013-01-29
-  |syntastic|                      3.5.0                  2014-09-01
-  |tComment|                       3.04                   2014-09-14
-  |vim-coffee-script|              v003                   2014-10-10
-  |nerdtree|                       4.2.0-198-g3b98a7f     2014-11-20
-  |vim-railscasts-theme|           9035daff38dbb          2013-02-16
-  |rename.vim|                     f133763b0bbd7          2014-03-23
-  |vim-ruby|                       vim7.4-69-g243d021     2014-12-01
-  |vim-rspec|                      65735f6416fec          2014-07-28
-  |vim-rails|                      v5.1-52-gf7d264f       2014-12-02
-  |vim-haml|                       vim7.2-82-g204e327     2014-08-08
-  |vim-bundler|                    v2.0-28-g48abb77       2014-10-27
-  |vim-cucumber|                   8f4826012771e          2014-09-18
-  |vim-endwise|                    v1.2-9-g96eb117        2014-10-01
-  |vim-fugitive|                   v2.1-30-g2c8461d       2014-11-20
+  |vim-pathogen|                   v2.3-11-gb9fb0df       2014-11-06
+  |vim-commentary|                 v1.2-9-g9c68513        2014-11-10
   |vim-surround|                   v2.0-8-gfa433e0        2014-07-26
+  |vim-endwise|                    v1.2-9-g96eb117        2014-10-01
+  |vim-easy-align|                 2.9.6-14-g246139c      2014-12-01
+  |ultisnips|                      3.0-126-gb26f2c9       2014-12-03
+  |vim-snippets|                   1.0.0-278-gb1a62cf     2014-12-04
+  |ctrlp.vim|                      1.79-27-gb5d3fe6       2013-07-29
+  |ctrlp_bdelete.vim|              c3a855d3cccb6          2014-08-09
+  |ag.vim|                         d3a00f8affb09          2014-07-07
+  |vim-unimpaired|                 v1.2-30-g3548479       2014-10-14
+  |a.vim|                          2.18                   2007-06-07
+  |tagbar|                         v2.6.1-42-gf9c5f24     2014-11-26
+  |vim-visual-star-search|         0.2-19-g280b4c6        2014-11-02
+  |vim-expand-region|              v1.2-2-g9665135        2013-08-19
+  |vim-closebuffer|                0.2-1-g1baa81b         2010-08-12
+  |vim-ruby|                       vim7.4-69-g243d021     2014-12-01
+  |vim-rails|                      v5.1-52-gf7d264f       2014-12-02
+  |vim-bundler|                    v2.0-28-g48abb77       2014-10-27
+  |vim-rake|                       v1.2-36-g13533d9       2014-07-31
+  |vim-vinegar|                    ac893960c324d          2014-06-18
+  |vim-speeddating|                v20100301-24-g2321342  2014-04-15
+  |IndexedSearch|                  070503                 2007-05-03
+  |vim-yankstack|                  c6b96be20d9cf          2014-08-04
+  |gundo.vim|                      v2.5.0-2-g3975ac8      2013-07-10
+  |vim-repeat|                     v1.1-1-g2a3c5f8        2013-12-24
+  |editorconfig-vim|               v0.3.2-65-gf28c03a     2014-10-28
+  |YAIFA|                          efa1e15e3ba85          2010-09-11
+  |syntastic|                      3.5.0-115-gd422c6d     2014-12-05
+  |vim-toggle-wrap|                0.1                    2010-08-11
+  |clam.vim|                       v1.3.0-2-gbea3683      2012-09-08
+  |vim-dispatch|                   v1.2-4-g78ed0c0        2014-11-09
+  |vim-fugitive|                   v2.1-30-g2c8461d       2014-11-20
+  |vim-runtest|                    4de4bf3588de2          2014-06-24
+  |vim-instant-markdown|           v0.0.7-4-g3b804eb      2014-01-26
+  |vim-ruby-block-conv|            0.1                    2005-11-14
+  |vim-textobj-comment|            v1.0.0-12-g58ae457     2014-04-11
+  |vim-textobj-user|               0.6.4                  2014-10-29
+  |vim-textobj-rubyblock|          0.0.3-4-gb5b84e4       2014-01-22
+  |vim-textobj-parameter|          e008f5eaab71f          2012-06-11
+  |vim-indent-object|              1.1.2-1-g78fffa6       2011-03-05
+  |vim-textobj-syntax|             0.0.2                  2013-01-18
+  |vim-textobj-variable-segment|   d4453e1ad7cb0          2014-01-26
+  |vim-textobj-uri|                v0.3-3-ga6408d1        2013-12-22
+  |Arduino-syntax-file|            7-1-g5c96e2f           2011-11-18
+  |vim-javascript|                 v0.9.0-58-g977e220     2014-11-25
+  |jQuery|                         0.5.2                  2011-05-29
+  |vim-git|                        v6.0-16-g297e707       2014-07-18
+  |vim-coffee-script|              v003-2-g827e4a3        2014-10-10
+  |vim-eco|                        35edb8326ce96          2014-04-21
+  |puppet-vim|                     eccd0e9e1e93a          2011-11-24
+  |vim-less|                       940a8defa0576          2014-10-14
+  |vim-slim|                       0daaa8581f9a9          2014-07-01
+  |vim-airline|                    v0.6-182-g4a22088      2014-11-26
+  |vim-crosshairs|                 1.00-4-g1676de9        2014-06-16
+  |vim-trailing-whitespace|        1.0-7-gd4ad27d         2014-08-09
+  |vim-vividchalk|                 v2.0-2-gfd69606        2012-03-02
+  |vim-irblack|                    59622caff32a7          2010-01-21
+  |vim-colors-solarized|           528a59f26d122          2011-05-09
+  |vim-railscasts|                 c796a58a40846          2013-02-12
+  |twilight|                       0.3                    2009-04-30
+  |base16-vim|                     851a737217374          2014-11-29
+  |vim-tomorrow-theme|             v1.0-24-gf45a2ca       2014-10-30
+  |nerdtree|                       4.2.0-198-g3b98a7f     2014-11-20
+  |vim-colorschemes|               81c6dd7ce3169          2014-10-29
 
