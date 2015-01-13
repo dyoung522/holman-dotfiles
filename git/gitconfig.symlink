@@ -112,4 +112,6 @@
 
 
 [push]
-    default = simple
+	default = simple
+[credential]
+	helper = osxkeychain
