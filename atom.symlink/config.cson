@@ -1,8 +1,9 @@
-'global':
+'*':
   'editor':
-    'showIndentGuide': true
     'fontFamily': 'Menlo'
     'fontSize': 15
+    'showIndentGuide': true
+    'invisibles': {}
   'core':
     'ignoredNames': [
       '.bundle'
@@ -12,15 +13,14 @@
       'tmp'
       'vendor'
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
-    ]
-    'hideGitIgnoredFiles': true
     'disabledPackages': [
       'background-tips'
       'exception-reporting'
       'metrics'
+    ]
+    'themes': [
+      'seti-ui'
+      'seti-syntax'
     ]
   'spell-check':
     'grammars': [
@@ -33,3 +33,5 @@
   'release-notes':
     'viewedVersion': '0.89.0'
   'go-plus': {}
+  'vim-mode':
+    'useSmartcaseForSearch': true
