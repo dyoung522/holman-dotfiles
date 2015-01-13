@@ -2,7 +2,7 @@
 
 
 Lists the currently installed bundles. Also see the |bundle-log|.
-Last updated by vim-update-bundles on Sat Dec  6 20:39:48 EST 2014.
+Last updated by vim-update-bundles on Sat Dec  6 21:33:51 EST 2014.
 
   PLUGIN                           VERSION                RELEASE DATE
 ------------------------------------------------------------------------
@@ -71,4 +71,8 @@ Last updated by vim-update-bundles on Sat Dec  6 20:39:48 EST 2014.
   |vim-tomorrow-theme|             v1.0-24-gf45a2ca       2014-10-30
   |nerdtree|                       4.2.0-198-g3b98a7f     2014-11-20
   |vim-colorschemes|               81c6dd7ce3169          2014-10-29
+  |vim-nerdtree-tabs|              v1.4.6                 2014-09-25
+  |vim-addon-mw-utils|             0c5612fa31ee4          2012-11-05
+  |tlib_vim|                       1.13-3-gb730863        2014-11-18
+  |vim-snipmate|                   v0.87-46-g8cb6c3e      2014-11-26
 

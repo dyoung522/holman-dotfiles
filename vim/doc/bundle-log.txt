@@ -144,3 +144,13 @@ Sat Dec  6 20:37:37 EST 2014 by vim-update-bundles 0.8
 Sat Dec  6 20:39:48 EST 2014 by vim-update-bundles 0.8
    no updates
 
+Sat Dec  6 21:32:53 EST 2014 by vim-update-bundles 0.8
+ Add |vim-nerdtree-tabs|        v1.4.6             https://github.com/jistr/vim-nerdtree-tabs.git
+ Add |vim-addon-mw-utils|       0c5612fa31ee4      https://github.com/MarcWeber/vim-addon-mw-utils.git
+ Add |tlib_vim|                 1.13-3-gb730863    https://github.com/tomtom/tlib_vim.git
+ Add |vim-snipmate|             v0.87-46-g8cb6c3e  https://github.com/garbas/vim-snipmate.git
+ Aborted: urls map to the same bundle: https://github.com/honza/vim-snippets and honza/vim-snippets
+
+Sat Dec  6 21:33:51 EST 2014 by vim-update-bundles 0.8
+   no updates
+
