@@ -6,6 +6,9 @@
   excludesfile = /Users/dcyoung/.gitignore
   autocrlf = input
 
+[core]
+    excludesfile = ~/.gitignore
+
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
   st = status
