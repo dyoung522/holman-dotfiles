@@ -72,6 +72,12 @@ set -g mouse-select-window on
 set -g default-terminal "screen-256color"
 # END:termcolor
 
+# Set the default command and shell
+# START:shell
+set -g default-command /bin/zsh
+set -g default-shell /bin/zsh
+# END:shell
+
 # enable activity alerts
 #START:activity
 setw -g monitor-activity on
