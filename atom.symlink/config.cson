@@ -1,37 +1,38 @@
-'*':
-  'editor':
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-    'showIndentGuide': true
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 15
+    showIndentGuide: true
+    invisibles: {}
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
     ]
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
     ]
-    'themes': [
-      'seti-ui'
-      'seti-syntax'
+    themes: [
+      "seti-ui"
+      "seti-syntax"
     ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'go-plus': {}
-  'vim-mode':
-    'useSmartcaseForSearch': true
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "go-plus": {}
+  "vim-mode":
+    useSmartcaseForSearch: true
+  linter: {}

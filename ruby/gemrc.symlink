@@ -3,7 +3,6 @@
 :verbose: true
 :backtrace: false
 :benchmark: false
-gem: --no-document
 gem: -n/usr/local/bin
 gem: --no-document
 
