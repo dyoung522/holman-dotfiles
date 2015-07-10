@@ -10,6 +10,8 @@ alias dc-logs='docker-compose logs'
 # Helpers
 alias dm=docker-machine
 alias dc-b=dc-build
+alias dm=docker-machine
+alias dcomp=docker-compose
 
 # Delete all containers
 alias drmca='docker rm $(docker ps -a -q)'
