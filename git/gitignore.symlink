@@ -4,6 +4,7 @@
 *~
 *.rbc*
 *.sw[nop]
+*.dump
 .bundle
 db/*.sqlite3
 log/*.log
@@ -13,5 +14,8 @@ tmp/**/*
 !tmp/cache/.keep
 zeus.json
 .idea/
+.elasticbeanstalk/
 app_environment_variables.rb
-*.dump
+atlassian-ide-plugin.xml
+Gemfile.lock
+Procfile.local

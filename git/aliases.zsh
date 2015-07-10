@@ -25,3 +25,4 @@ alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"
 
 alias gci="git add . && git commit -a"
+alias go='git checkout ' # really makes navigating between branches intuitive

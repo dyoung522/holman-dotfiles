@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+; This file is auto-generated and should not be edited since any
+; modifications will be lost the next time any apm command is run.
+;
+; You should instead edit your .apmrc config located in ~/.atom/.apmrc
+cache = /Users/dyoung/.dotfiles/atom.symlink/.apm
+=======
+cache = /Users/dcyoung/.dotfiles/atom.symlink/.apm
+>>>>>>> 0294cb05fe05286d5b58de7ee50e3be513ee9b29

@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/dyoung/Dropbox/Source/wwit/sites/backstage/.elasticbeanstalk'
+=======
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/dcyoung/.ssh'
+let g:netrw_dirhist_2='/Users/dcyoung/Projects/custom_audience_api/app/routes'
+>>>>>>> 0294cb05fe05286d5b58de7ee50e3be513ee9b29
