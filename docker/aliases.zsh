@@ -1,4 +1,6 @@
 # Core
+alias dm=docker-machine
+alias dcomp=docker-compose
 alias dc-='docker-compose'
 alias dc-build='docker-compose build'
 alias dc-up='docker-compose up'
