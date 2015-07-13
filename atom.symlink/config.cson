@@ -1,24 +1,29 @@
 "*":
-<<<<<<< HEAD
-  "exception-reporting":
-    userId: "ee76ea4a-2966-ee49-64c1-527c75005cb1"
-  welcome:
-    showOnStartup: false
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 15
+    showIndentGuide: true
+    invisibles:
+      {}
   core:
     audioBeep: false
     disabledPackages: [
       "language-javascript-jsx"
       "jshint"
     ]
-    projectHome: "~/Projects"
-  editor:
-    invisibles: {}
-  react: {}
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+    ]
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "go-plus":
+    {}
   "vim-mode":
     useSmartcaseForSearch: true
-    useClipboardAsDefaultRegister: true
-  jshint:
-    supportLintingJsx: true
-".coffee.jsx.source":
-  editor:
-    autoIndentOnPaste: true
+  linter:
+    {}
