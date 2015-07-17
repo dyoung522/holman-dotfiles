@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Get in use image tags
+docker ps | grep -v 'IMAGE' | awk '{ print $2}' > /tmp/tags-inuse.txt
+
+# Get all images with tags, combine the image and tag keep the id
+docker images -a | grep -v 'REPOSITORY' | grep -v '^<none>' | awk '{print $1":"$2"\t"$3}' > /tmp/tags-full.txt
+
+# Remove the in-use tags from the full list
+grep -v -f /tmp/tags-inuse.txt /tmp/tags-full.txt > /tmp/tags-prune-list.txt
+
+while read l; do
+  echo "** removing image $l"
+  # Remove the tags from the images
+  echo "$l" | awk '{print $1}' | xargs docker rmi
+  # be kind
+  sleep 1
+done < /tmp/tags-prune-list.txt
+
+echo "Removed $(wc -l /tmp/tags-prune-list.txt) images"
+
+rm -f /tmp/tags-*.txt
