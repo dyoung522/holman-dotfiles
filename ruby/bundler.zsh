@@ -7,10 +7,8 @@ alias bu="bundle update"
 if [[ "$(uname)" == 'Darwin' ]]
 then
   local cores_num="$(sysctl hw.ncpu | awk '{print $2}')"
-else
-  local cores_num="$(nproc)"
+  eval "alias bi='bundle install --jobs=$cores_num'"
 fi
-eval "alias bi='bundle install --jobs=$cores_num'"
 
 # The following is based on https://github.com/gma/bundler-exec
 

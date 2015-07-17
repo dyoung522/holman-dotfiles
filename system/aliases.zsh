@@ -18,6 +18,11 @@ if $(gls &>/dev/null) ; then
   alias l="gls -lAh --color"
   alias ll="gls -l --color"
   alias la='gls -A --color'
+else
+  alias ls="ls -F --color"
+  alias l="ls -lAh --color"
+  alias ll="ls -l --color"
+  alias la='ls -A --color'
 fi
 
 alias fixperms="find ~/Dropbox -type d -exec chmod 0755 {} \; ; find ~/Dropbox -type f -exec chmod g-wx,o-wx {} \;"

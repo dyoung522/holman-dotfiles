@@ -76,7 +76,7 @@ ruby_version() {
 rails_version() {
   if [[ -f "Gemfile.lock" ]] ; then
     if grep -q rails Gemfile.lock ; then
-      echo "Rails $(egrep '\srails\s\(\d.*\)' Gemfile.lock | sed -e 's/^ *rails (//' -e 's/) *$//')"
+      echo "Rails $(grep -iE '[[:space:]]rails[[:space:]]\([[:digit:]].*\)' Gemfile.lock | sed -e 's/^ *rails (//' -e 's/) *$//')"
     fi
   fi
 }

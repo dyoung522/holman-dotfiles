@@ -1,12 +1,16 @@
 # Our .tmux.conf file
 
+# Options
+set-option -g renumber-windows on
+set-option -g default-shell /bin/zsh
+
 # Setting the prefix from C-b to C-a
 # START:prefix
-set -g prefix C-a  
+set -g prefix C-a 
 # END:prefix
 # Free the original Ctrl-b prefix keybinding
 # START:unbind
-unbind C-b 
+unbind C-b
 # END:unbind
 #setting the delay between prefix and command
 # START:delay
@@ -40,11 +44,19 @@ bind - split-window -v
 
 # moving between panes
 # START:paneselect
-bind h select-pane -L 
-bind j select-pane -D 
+bind h select-pane -L
+bind j select-pane -D
 bind k select-pane -U
-bind l select-pane -R    
+bind l select-pane -R
 # END:paneselect
+
+# Copy & Paste
+# START:copymode
+unbind p ; bind p paste-buffer
+bind -t vi-copy 'v' begin-selection
+bind -t vi-copy 'y' copy-pipe 'xclip -in -selection clipboard'
+#bind -t vi-copy 'y' copy-selection
+# END:copymode
 
 # Quick pane selection
 # START:panetoggle
@@ -54,18 +66,39 @@ bind -r C-l select-window -t :+
 
 # Pane resizing
 # START:paneresize
-bind -r H resize-pane -L 5 
-bind -r J resize-pane -D 5 
-bind -r K resize-pane -U 5 
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 # END:paneresize
+
+# Join Pane keys
+# START:join
+bind-key C-j command-prompt -p "join pane from:" "join-pane -s '%%'"
+bind-key C-s command-prompt -p "send pane to:" "join-pane -t '%%'"
+# END:join
+
+# Renumber windows
+# START:winrenumber
+bind -r R move-window -r
+# END:winrenumber
+
 # mouse support - set to on if you want to use the mouse
 # START:mouse
-#setw -g mode-mouse on 
-#set -g mouse-select-pane on 
-#set -g mouse-resize-pane on 
-#set -g mouse-select-window on
+#set -g terminal-overrides 'xterm*:smcup@:rmcup@'
+setw -g mode-mouse off
+set -g mouse-resize-pane off
+set -g mouse-select-pane off
+set -g mouse-select-window off
 # END:mouse
+
+# Copy buffer to clipboard
+# START:xclip
+# move x clipboard into tmux paste buffer
+bind C-p run "xclip -o | tmux load-buffer - ; tmux paste-buffer"
+# move tmux copy buffer into x clipboard
+bind C-y run "tmux save-buffer - | xclip -i"
+# END:xclip
 
 # Set the default terminal mode to 256color mode
 # START:termcolor
@@ -92,15 +125,15 @@ set -g status-bg black
 
 # set the color of the window list
 # START:windowstatuscolor
-setw -g window-status-fg cyan 
-setw -g window-status-bg default 
+setw -g window-status-fg cyan
+setw -g window-status-bg default
 setw -g window-status-attr dim
 # END:windowstatuscolor
 
 # set colors for the active window
 # START:activewindowstatuscolor
-setw -g window-status-current-fg white 
-setw -g window-status-current-bg red 
+setw -g window-status-current-fg white
+setw -g window-status-current-bg red
 setw -g window-status-current-attr bright
 # END:activewindowstatuscolor
 
@@ -121,8 +154,8 @@ set -g message-attr bright
 
 # Status line left side
 # START:statusleft
-set -g status-left-length 40 
-set -g status-left "#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
+set -g status-left-length 40
+set -g status-left "#[fg=green]Session: #S (ODC) #[fg=yellow]#I #[fg=cyan]#P"
 # END:statusleft
 
 #START:utf8
@@ -149,3 +182,10 @@ set -g status-justify centre
 # START:vikeys
 setw -g mode-keys vi
 # END:vikeys
+
+# quick pane cycling
+# START:quickcycle
+unbind C-A
+bind C-A last-window
+# END:quickcycle
+
