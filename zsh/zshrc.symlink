@@ -1,3 +1,17 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/dcyoung/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
@@ -24,10 +38,6 @@ for file in ${${config_files:#*/path.zsh}:#*/completion.zsh} ; do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
-
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh} ; do
   source $file
@@ -38,4 +48,7 @@ unset config_files
 # added by travis gem
 [ -f /Users/dyoung/.travis/travis.sh ] && source /Users/dyoung/.travis/travis.sh
 
-source $(brew --prefix nvm)/nvm.sh
+if [[ "$TERM" != "screen-256color" ]] ; then
+  (tmux attach-session -t "$USER" || tmux new-session -s "$USER") && exit
+fi
+
