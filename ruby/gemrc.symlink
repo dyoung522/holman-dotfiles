@@ -4,5 +4,5 @@
 :backtrace: false
 :benchmark: false
 gem: -n/usr/local/bin
-gem: --no-document
+gem: --no-ri --no-rdoc
 
