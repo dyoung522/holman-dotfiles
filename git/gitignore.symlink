@@ -17,6 +17,9 @@ zeus.json
 .nvmrc
 app_environment_variables.rb
 atlassian-ide-plugin.xml
+npm-shrinkwrap.json
+Gemfile.lock
+vender/cache/*
 Procfile.local
 Gemfile.lock
 /*.iml
