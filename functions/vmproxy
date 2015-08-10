@@ -1,0 +1,5 @@
+#!/bin/bash
+(
+  cd ~/Projects/vmproxy
+  vagrant ${1:-'reload'}
+)
