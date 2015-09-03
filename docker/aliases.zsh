@@ -29,7 +29,8 @@ alias boot2docker=docker-machine
 # Functions
 function dme() {
   VM=${1:=dev}
-  echo "Docker now using ${VM}"
+  echo "Switching to ${VM}, please wait..."
   eval $(docker-machine env ${VM})
+  echo "Docker now using ${VM}"
 }
 
