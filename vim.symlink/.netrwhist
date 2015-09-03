@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/dcyoung/.ssh'
 let g:netrw_dirhist_2='/Users/dcyoung/Projects/custom_audience_api/app/routes'
 let g:netrw_dirhist_3='/Users/dcyoung/Projects/docker/oracle-ruby/oraclelinux-dev'
+let g:netrw_dirhist_4='/Users/dcyoung/Projects/oracle-social-style-guide/tasks/live-styleguide'
+let g:netrw_dirhist_5='/Users/dcyoung'
