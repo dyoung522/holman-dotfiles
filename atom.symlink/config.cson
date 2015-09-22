@@ -3,7 +3,8 @@
     fontFamily: "Menlo"
     fontSize: 15
     showIndentGuide: true
-    invisibles: {}
+    invisibles:
+      {}
   core:
     ignoredNames: [
       ".bundle"
@@ -32,7 +33,9 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
-  "go-plus": {}
+  "go-plus":
+    {}
   "vim-mode":
     useSmartcaseForSearch: true
-  linter: {}
+  linter:
+    {}

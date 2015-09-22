@@ -14,7 +14,7 @@ tmp/**/*
 !tmp/cache/.keep
 zeus.json
 .idea/
-.elasticbeanstalk/
 app_environment_variables.rb
 atlassian-ide-plugin.xml
 Procfile.local
+.nvmrc
