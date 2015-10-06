@@ -18,3 +18,5 @@ zeus.json
 app_environment_variables.rb
 atlassian-ide-plugin.xml
 Procfile.local
+Gemfile.lock
+/*.iml
