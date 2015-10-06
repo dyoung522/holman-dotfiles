@@ -4,6 +4,9 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Source
 
+# create an empty chpwn_functions array
+set -A chpwd_functions
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]] ; then
@@ -35,6 +38,5 @@ done
 
 unset config_files
 
-# added by travis gem
-[ -f /Users/dyoung/.travis/travis.sh ] && source /Users/dyoung/.travis/travis.sh
-
+# Load additional environment variables
+[[ -f ~/.env ]] && source ~/.env
