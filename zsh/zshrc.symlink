@@ -4,9 +4,11 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Source
 
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
+# create an empty chpwn_functions array
+set -A chpwd_functions
+
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
 if [[ -a ~/.localrc ]] ; then
   source ~/.localrc
 fi
@@ -36,6 +38,7 @@ done
 
 unset config_files
 
+<<<<<<< HEAD
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
 autoload -U up-line-or-beginning-search
@@ -44,3 +47,7 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+=======
+# Load additional environment variables
+[[ -f ~/.env ]] && source ~/.env
+>>>>>>> move Travis config out of zshrc
