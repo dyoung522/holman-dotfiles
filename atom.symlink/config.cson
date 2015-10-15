@@ -1,41 +1,23 @@
 "*":
-  editor:
-    fontFamily: "Menlo"
-    fontSize: 15
-    showIndentGuide: true
-    invisibles:
-      {}
-  core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-    ]
-    themes: [
-      "seti-ui"
-      "seti-syntax"
-    ]
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
+  "exception-reporting":
+    userId: "ee76ea4a-2966-ee49-64c1-527c75005cb1"
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "go-plus":
-    {}
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "language-javascript-jsx"
+      "jshint"
+    ]
+    projectHome: "~/Projects"
+  editor:
+    invisibles: {}
+  react: {}
   "vim-mode":
     useSmartcaseForSearch: true
-  linter:
-    {}
+    useClipboardAsDefaultRegister: true
+  jshint:
+    supportLintingJsx: true
+".coffee.jsx.source":
+  editor:
+    autoIndentOnPaste: true
