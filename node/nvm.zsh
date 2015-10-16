@@ -1,11 +1,16 @@
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
-[[ -f ~/.nvmrc ]] && export NODE_VERSION=$(cat ~/.nvmrc)
+if [ -f "${NVM_DIR}/nvm.sh" ]; then
+  source "${NVM_DIR}/nvm.sh"
+elif which -s brew >/dev/null; then
+  source $(brew --prefix nvm)/nvm.sh
+else
+  exit
+fi
 
 function switch_node_version() {
   if (( $+functions[nvm] )); then
-    if [[ -f '.nvmrc' ]]; then
+    if [ -f '.nvmrc' ]; then
       nvm use $(cat .nvmrc) > /dev/null
     else
       nvm use $(cat ~/.nvmrc) > /dev/null
@@ -16,3 +21,4 @@ function switch_node_version() {
 chpwd_functions=(${chpwd_functions[@]} "switch_node_version")
 
 switch_node_version
+
