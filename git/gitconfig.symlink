@@ -36,7 +36,6 @@
     lmo = log --pretty=format:"%s"
     #list all aliases
     la = "!git config -l | grep alias | cut -c 7-"
-    diff = diff --word-diff
     d = diff --word-diff
     dc = diff --cached
     #list modified files in last commit
@@ -145,7 +144,7 @@
     insteadOf = git://
     insteadOf = ssh://
 
-[url "https://e806110d3ea415626f04e6437a765cfe46ded2c1:x-oauth-basic@github.com/"]
+[url "https://938ee1fbaeeb7ce6626ed0058eb2cac6d6a9a408:x-oauth-basic@github.com/"]
     insteadOf = git@github.com:
 
 [filter "hawser"]
@@ -157,3 +156,5 @@
     clean = git-lfs clean %f
     smudge = git-lfs smudge %f
     required = true
+[hub]
+	protocol = https
