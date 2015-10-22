@@ -158,3 +158,5 @@
     required = true
 [hub]
 	protocol = https
+[push]
+	default = simple
