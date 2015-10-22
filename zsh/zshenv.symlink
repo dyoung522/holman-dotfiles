@@ -1,5 +1,5 @@
-export HTTP_PROXY=http://www-proxy.us.oracle.com
-export HTTPS_PROXY=http://www-proxy.us.oracle.com
+export HTTP_PROXY=http://www-proxy.us.oracle.com:80
+export HTTPS_PROXY=http://www-proxy.us.oracle.com:80
 export NO_PROXY="127.0.0.1,localhost,.oracle.com,$(hostname -f),$(hostname -i)"
 export http_proxy=$HTTP_PROXY
 export https_proxy=$HTTPS_PROXY
