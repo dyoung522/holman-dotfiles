@@ -60,10 +60,16 @@ node_prompt() {
 ruby_version() {
   if (( $+commands[rbenv] )) ; then
     echo "Ruby $(rbenv version | awk '{print $1}')"
+    return
   fi
 
   if (( $+commands[rvm-prompt] )) ; then
     echo "Ruby $(rvm-prompt | awk '{print $1}')"
+    return
+  fi
+
+  if (( $+commands[ruby] )) ; then
+    echo "Ruby $(ruby --version | awk '{print $2}')"
   fi
 }
 

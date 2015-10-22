@@ -1,12 +1,7 @@
 export NVM_DIR=~/.nvm
 
-if [ -f "${NVM_DIR}/nvm.sh" ]; then
-  source "${NVM_DIR}/nvm.sh"
-elif which -s brew >/dev/null; then
-  source $(brew --prefix nvm)/nvm.sh
-else
-  exit
-fi
+[[ -f "${NVM_DIR}/nvm.sh" ]] && source "${NVM_DIR}/nvm.sh"
+which brew &>/dev/null && source $(brew --prefix nvm)/nvm.sh
 
 function switch_node_version() {
   if (( $+functions[nvm] )); then
