@@ -146,8 +146,6 @@ endif
 
 execute pathogen#infect()
 
-colorscheme railscasts
-
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <D-1> :b 1<CR>
