@@ -144,7 +144,7 @@
     insteadOf = git://
     insteadOf = ssh://
 
-[url "https://0d8a0a80ba155ade1c5da1130ba559220a4646ed:x-oauth-basic@github.com/"]
+[url "https://$GITHUB_AUTH_TOKEN:x-oauth-basic@github.com/"]
     insteadOf = git@github.com:
 
 [filter "hawser"]
