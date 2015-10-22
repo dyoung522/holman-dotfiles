@@ -51,6 +51,7 @@ unset config_files
 # Load additional environment variables
 [[ -f ~/.env ]] && source ~/.env
 
-if [[ "$TERM" != "screen-256color" ]] ; then
+if (( $+commands[tmux] )) && [ "$TERM" != "screen-256color" ] ; then
+  echo Launching tmux session...
   (tmux attach-session -t "$USER" || tmux new-session -s "$USER") && exit
 fi
