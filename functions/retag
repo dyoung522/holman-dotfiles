@@ -1,0 +1,11 @@
+retag() {
+  if [[ "$1" == "" ]] ; then
+    echo "Usage: $0 <tag>"
+    return
+  fi
+
+  echo "retagging as $1"
+
+  git tag -f $1
+  git push -f origin $1
+}
