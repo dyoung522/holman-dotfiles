@@ -3,12 +3,8 @@
   email = dyoung522@gmail.com
 
 [core]
-  excludesfile = /Users/dcyoung/.gitignore
+  excludesfile = ~/.gitignore
   autocrlf = input
-
-[core]
-    excludesfile = ~/.gitignore
-	autocrlf = input
 
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
