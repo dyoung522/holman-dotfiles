@@ -14,8 +14,16 @@ tmp/**/*
 !tmp/cache/.keep
 zeus.json
 .idea/
+.ruby-version
+.nvmrc
 app_environment_variables.rb
 atlassian-ide-plugin.xml
+npm-shrinkwrap.json
+vender/cache/*
 Procfile.local
-Gemfile.lock
+runme
 /*.iml
+*.tar
+*.tar.gz
+*.tgz
+.NOSYNC
