@@ -22,6 +22,7 @@ npm-shrinkwrap.json
 vender/cache/*
 Procfile.local
 runme
+aws.zsh
 /*.iml
 *.tar
 *.tar.gz
