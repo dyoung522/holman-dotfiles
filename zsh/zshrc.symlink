@@ -1,6 +1,13 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+# Set the Theme here
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv nvm vcs)
+ZSH_THEME="$ZSH/zsh/themes/powerlevel9k/powerlevel9k.zsh-theme"
+source $ZSH_THEME
+
+DEFAULT_USER=dcyoung
+
 # your project folder that we can `c [tab]` to
 export PROJECTS="~/Projects"
 
@@ -35,6 +42,11 @@ compinit
 for file in ${(M)config_files:#*/completion.zsh} ; do
   source $file
 done
+
+# load syntax highlighting
+if [[ -f "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] ; then
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 unset config_files
 

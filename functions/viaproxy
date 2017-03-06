@@ -1,0 +1,8 @@
+#!/bin/bash
+(
+  [[ -n ${PROXY} ]] && PROXY_ENABLED=true
+
+  [[ !$PROXY_ENABLED ]] && source ~/.env-proxy-on
+  eval $@
+  [[ !$PROXY_ENABLED ]] && source ~/.env-proxy-off
+)

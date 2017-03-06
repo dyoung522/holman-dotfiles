@@ -14,6 +14,7 @@ pathmunge /usr/local/bin        force
 pathmunge /usr/local/sbin       force
 
 pathmunge /usr/local/heroku/bin
+pathmunge /usr/local/opt/openssl/bin force
 pathmunge /usr/local/lib/node_modules after
 
 pathmunge $HOME/.rbenv/bin

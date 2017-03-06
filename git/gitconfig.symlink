@@ -1,9 +1,9 @@
 [user]
-  name = Donovan Young
-  email = dyoung522@gmail.com
+	name = Donovan Young
+	email = dyoung522@gmail.com
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/dcyoung/.gitignore
   autocrlf = input
 
 [alias]
@@ -141,12 +141,12 @@
   tagap = "!git taga $1 && git push origin $1 --force #"  
 
 [difftool "sourcetree"]
-  cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
-  path = 
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
 
 [mergetool "sourcetree"]
-  cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-  trustExitCode = true
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
 
 [color]
   ui = true
@@ -192,5 +192,5 @@
   trustExitCode = true
   cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 
-[remote "origin"]
-  tagOpt = --tags
+[commit]
+	template = /Users/dcyoung/.stCommitMsg
