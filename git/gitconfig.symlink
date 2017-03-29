@@ -193,4 +193,11 @@
   cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 
 [commit]
-	template = /Users/dcyoung/.stCommitMsg
+  template = /Users/dcyoung/.stCommitMsg
+
+[url "127.0.0.1"]
+  insteadOf = alm.oraclecorp.com
+
+[url "ssh://donovan.young"]
+    insteadOf = ssh://social-alm_us
+
