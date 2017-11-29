@@ -1,15 +1,13 @@
-export NVM_DIR=~/.nvm
+export NVM_DIR="$HOME/.nvm"
 
 [[ -f "${NVM_DIR}/nvm.sh" ]] && source "${NVM_DIR}/nvm.sh"
-which brew &>/dev/null && source $(brew --prefix nvm)/nvm.sh
 
 function switch_node_version() {
   if (( $+functions[nvm] )); then
-    if [ -f '.nvmrc' ]; then
-      nvm use $(cat .nvmrc) > /dev/null
-    else
-      nvm use $(cat ~/.nvmrc) > /dev/null
-    fi
+    NODE_VERSION=$(cat ~/.nvmrc)
+    [[ -f ".nvmrc" ]] && NODE_VERSION=$(cat .nvmrc)
+
+    nvm use --delete-prefix ${NODE_VERSION} > /dev/null
   fi
 }
 
