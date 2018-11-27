@@ -21,4 +21,3 @@ function switch_node_version() {
 chpwd_functions=(${chpwd_functions[@]} "switch_node_version")
 
 switch_node_version
-

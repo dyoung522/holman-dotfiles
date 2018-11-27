@@ -19,6 +19,7 @@ pathmunge /usr/local/lib/node_modules after
 pathmunge $HOME/.rbenv/bin
 pathmunge $HOME/.bin            after
 pathmunge $HOME/bin             after
+pathmunge $(brew --prefix qt@5.5)/bin after
 
 # Cleanup
 unset pathmunge
